@@ -1,8 +1,8 @@
 import './App.css';
-import Title from './Title';
+import Title from './components/Title';
 import React, { useState } from 'react';
 import todos from './mock-todo.json';
-import ToDoList from './ToDoList';
+import ToDoList from './components/ToDoList';
 
 function App() {
 
