@@ -4,3 +4,6 @@
 .not-done {
   color: black;
 }
+.clickable {
+  cursor: pointer;
+}
