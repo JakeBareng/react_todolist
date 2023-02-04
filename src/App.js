@@ -1,4 +1,4 @@
-import './App.css';
+import './index.css';
 import Title from './components/Title';
 import React, { useState } from 'react';
 import todos from './mock-todo.json';

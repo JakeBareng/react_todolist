@@ -5,7 +5,7 @@ const ToDo = ({todo, toggle}) => {
         toggle(todo.id)
     }
     return (
-        <div className={todo.done?"done clickable":"not-done clickable"} onClick={handleEvent}>
+        <div className={todo.done?"done clickable task":"not-done clickable task"} onClick={handleEvent}>
             {todo.todo}
         </div>
     )

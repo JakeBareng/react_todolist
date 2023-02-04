@@ -7,3 +7,10 @@
 .clickable {
   cursor: pointer;
 }
+.task {
+  width: fit-content;
+}
+.task-list {
+  width: fit-content;
+  margin: auto;
+}
