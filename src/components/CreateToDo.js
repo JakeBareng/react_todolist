@@ -6,6 +6,9 @@ const AddNewToDo = ({addNewToDo}) => {
     const handleSubmit = (e) => {
         e.preventDefault();
         setShowForm(false);
+        if (taskInput === "") {
+            return;
+        }
         addNewToDo(taskInput);
         setTaskInput("");
     }
@@ -25,11 +28,7 @@ const AddNewToDo = ({addNewToDo}) => {
         )
     }
 
-    return (
-        <div>
-            {conditionalRender()}
-        </div>
-    )
+    return conditionalRender()
 }
 
 export default AddNewToDo;
