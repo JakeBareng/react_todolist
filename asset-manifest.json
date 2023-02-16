@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/JakeBareng/react_todolist/static/css/main.f45b4c5b.css",
+    "main.js": "/JakeBareng/react_todolist/static/js/main.ad3b12bc.js",
+    "index.html": "/JakeBareng/react_todolist/index.html",
+    "main.f45b4c5b.css.map": "/JakeBareng/react_todolist/static/css/main.f45b4c5b.css.map",
+    "main.ad3b12bc.js.map": "/JakeBareng/react_todolist/static/js/main.ad3b12bc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f45b4c5b.css",
+    "static/js/main.ad3b12bc.js"
+  ]
+}
