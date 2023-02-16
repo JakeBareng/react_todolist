@@ -39,9 +39,13 @@ function App() {
   return (
     <div className="App">
       <Title/>
-      <RemoveFinishedToDo removeFinishedTask={removeFinishedTask} />
-      <AddNewToDo addNewToDo={addNewToDo} />
-      <ToDoList toDoList={toDoList} toggle={toggle} editTask={editTask}/>
+      <div id='interface'>
+        <div id='interface-buttons'>
+          <RemoveFinishedToDo removeFinishedTask={removeFinishedTask} />
+          <AddNewToDo addNewToDo={addNewToDo} />
+        </div>
+        <ToDoList toDoList={toDoList} toggle={toggle} editTask={editTask}/>
+      </div>
     </div>
   );
 }

@@ -1,18 +1,20 @@
 import React from "react";
 import { useState } from "react";
 
-const editItem = ({editTask,todo}) => {
+const EditItem = ({editTask,todo,setShowEdit}) => {
     const [inputValue, setInputValue] = useState("");
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        setShowEdit(false);
+        editTask(todo.id, inputValue);
     }
     return (
-        <form onSubmit={handleSubmit(e)}>
+        <form onSubmit={e=>handleSubmit(e)}>
             <input onChange={e => setInputValue(""+e.target.value)}></input>
             <button>done</button>
         </form>
     )
 }
 
-export default editItem;
+export default EditItem;

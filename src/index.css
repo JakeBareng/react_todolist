@@ -1,8 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
 :root {
-  
+  font-family: "Oswald", "Helvetica Neue", Arial, sans-serif;
+  --shadow-color: rgb(196 204 241);
+  --main-color: #353535ff;
+  --secondary-color: #4d5457;
+  --color1: #ffffffff;
+  --color2: #d9d9d9ff;
 }
 p{
   margin: 0;
+}
+body{
+  margin: 0;
+}
+#root {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--main-color);
+}
+#title {
+  font-size: 3rem;
+  width: fit-content;
+  margin: auto;
+  padding: 10px;
+  border-radius: .25rem;
+  background-color: var(--color1);
+}
+#interface {
+  width: 400px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 40px;
+  border-radius: .5rem;
+  background-color: var(--secondary-color);
+}
+#interface-buttons{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+button {
+  border-radius: .25rem;
+  border-width: 1px;
+  display: inline-flex;
+  font-size: .875rem;
+  line-height: 1.25rem;
+  padding: .5rem .75rem;
+  border-style: none;
+}
+input {
+  height: 2.1rem;
+  border-radius: 0.25rem;
+  border-style: none;
 }
 .done {
   color: green;
@@ -13,21 +67,29 @@ p{
 .clickable {
   cursor: pointer;
 }
+.task-list {
+  width: 95%;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
 .task-container {
-  margin: 5px;
   gap: 10px;
   padding: 10px;
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 200px;
+  width: 90%;
   transition: 200ms ease;
   overflow: hidden;
+  background-color: var(--main-color);
+  border-radius: 0.25rem;
 }
-.task-list {
-  width: fit-content;
-  margin: auto;
-}
+
 .edit-button {
   opacity: 0;
   position: relative;

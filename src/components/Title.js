@@ -2,7 +2,7 @@ import React from "react";
 
 const Title = () => {
     return (
-        <h1>ToDoList</h1>
+        <h1 id="title">ToDoList</h1>
     )
 }
 

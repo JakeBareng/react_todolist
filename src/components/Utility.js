@@ -6,6 +6,9 @@ export const toggleTask = (id,toDoList) => {
 }
 
 export const addNewTask = (description, toDoList) => {
+    if (description === "") {
+        return toDoList;
+    }
     const id = uniqid();
     return [...toDoList, {id:id, todo:description, done:false}]
 }
@@ -17,6 +20,9 @@ export const removeTasks = (toDoList) => {
 }
 
 export const editTodo = (toDoList, id, newDesc) => {
+    if (newDesc === "") {
+        return toDoList;
+    }
     return toDoList.map(todo => {
         return todo.id === id ? {...todo, todo: newDesc} : {...todo}
       })
