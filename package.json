@@ -1,8 +1,8 @@
 {
   "name": "react_todolist",
   "version": "0.1.0",
-  "private": true,
-  "homepage": "https://github.com/JakeBareng/react_todolist",
+  "private": false,
+  "homepage": "https://jakebareng.github.io/react_todolist/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",

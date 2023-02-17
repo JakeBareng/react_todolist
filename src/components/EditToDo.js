@@ -11,7 +11,7 @@ const EditItem = ({editTask,todo,setShowEdit}) => {
     }
     return (
         <form onSubmit={e=>handleSubmit(e)}>
-            <input onChange={e => setInputValue(""+e.target.value)} value={todo.todo}></input>
+            <input onChange={e => setInputValue(""+e.target.value)} defaultValue={todo.todo}></input>
             <button>done</button>
         </form>
     )
